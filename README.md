@@ -4,8 +4,7 @@ Mock object for testing demisto (XSOAR) automations.
 
 Create a mock object sample_mock.py:
 
-  from DemistoMock import DemistoMock
-  
+    from DemistoMock import DemistoMock  
     class SampleMock(DemistoMock):
       def __init__(self) -> None:
           super().__init__()
