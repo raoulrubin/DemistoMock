@@ -100,6 +100,9 @@ class DemistoMock(object):
 
     def fetch_results(self, data: any):
         print("Resuts", data)
+        
+    def results(self, data: any):
+        print(data)
 
     def args(self):
         return self.internalArgs
