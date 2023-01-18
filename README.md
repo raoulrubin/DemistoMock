@@ -20,10 +20,10 @@ Here is the consuming automation file automation.py:
     from sample_mock import SampleMock
     from DemistoMock import register_module_line, __line__, return_error, is_error, get_error
     from DemistoMock.markdown import formats, entryTypes, tableToMarkdown
-  
-    register_module_line('automation', 'start', __line__())
-  
     demisto = SampleMock()
+    
+    register_module_line('automation', 'start', __line__())
+    
     incident = demisto.incidents()[0]
     maxresults = demisto.args()['maxResults']
     ...
