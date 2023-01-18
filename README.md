@@ -2,6 +2,9 @@
 
 Mock object for testing demisto (XSOAR) automations. 
 
+To build:
+    pip install .
+
 Create a mock object sample_mock.py:
 
     from DemistoMock import DemistoMock  
