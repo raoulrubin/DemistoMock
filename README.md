@@ -15,7 +15,7 @@ Create a mock object sample_mock.py:
           self.init()
 
       def init(self):
-          self.internalIncident.load(0, {'name': 'test inncident 0', 'emailto': 'test@test.com'})
+          self.internalIncident.load(0, {'name': 'test incident 0', 'emailto': 'test@test.com'})
           self.internalArgs.set("maxResults", 100)
 
 Here is the consuming automation file automation.py:
