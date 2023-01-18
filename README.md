@@ -1,6 +1,6 @@
 # DemistoMock
 
-Mock object for testing demisto (XSOAR) automations. 
+Mock object for testing PaloAlto XSOAR (demisto) automation code.
 
 To build:
 
