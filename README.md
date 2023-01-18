@@ -26,5 +26,5 @@ Here is the consuming automation file automation.py:
     demisto = SampleMock()
     incident = demisto.incidents()[0]
     maxresults = demisto.args()['maxResults']
-  ...
+    ...
   
