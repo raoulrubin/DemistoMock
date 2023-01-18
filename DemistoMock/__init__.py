@@ -102,7 +102,7 @@ class DemistoMock(object):
         print("Resuts", data)
         
     def results(self, data: any):
-        print(data)
+        print('results:', data)
 
     def args(self):
         return self.internalArgs
