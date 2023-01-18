@@ -5,7 +5,7 @@ Mock object for testing demisto (XSOAR) automations.
 Create a mock object:
   from DemistoMock import DemistoMock
   
-  class SampleMock(DemistoMock):
+    class SampleMock(DemistoMock):
       def __init__(self) -> None:
           super().__init__()
           self.init()
@@ -16,16 +16,14 @@ Create a mock object:
 
 Here is the consuming automation file:
 
-  from sample_mock import SampleMock
-  from DemistoMock import register_module_line, __line__, return_error, is_error, get_error
-  from DemistoMock.markdown import formats, entryTypes, tableToMarkdown
+    from sample_mock import SampleMock
+    from DemistoMock import register_module_line, __line__, return_error, is_error, get_error
+    from DemistoMock.markdown import formats, entryTypes, tableToMarkdown
   
-  register_module_line('automation', 'start', __line__())
+    register_module_line('automation', 'start', __line__())
   
-  demisto = SampleMock()
-  
-  incident = demisto.incidents()[0]
-  
-  maxresults = demisto.args()['maxResults']
+    demisto = SampleMock()
+    incident = demisto.incidents()[0]
+    maxresults = demisto.args()['maxResults']
   ...
   
