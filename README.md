@@ -15,6 +15,8 @@ Create a mock object:
       self.internalIncident.load(0, {'name': 'test inncident 0', 'emailto': 'test@test.com'})
       self.internalArgs.set("maxResults", 100)
 
+Here is the consuming automation file:
+
   # automation.py
   from sample_mock import SampleMock
   from DemistoMock import register_module_line, __line__, return_error, is_error, get_error
