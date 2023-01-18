@@ -26,6 +26,6 @@ Here is the consuming automation file automation.py:
     
     incident = demisto.incidents()[0]
     maxresults = demisto.args()['maxResults']
-    demisto.executeCommand('setIncident', {'field' : 1234})
+    demisto.executeCommand('setIncident', {'max_results' : maxresults})
     ...
   
