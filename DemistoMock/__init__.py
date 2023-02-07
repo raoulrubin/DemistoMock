@@ -1,37 +1,6 @@
 from typing import List
 import sys
 
-mock_results = None
-mock_error = None
-
-
-def __line__():
-    return sys._getframe(1).f_lineno
-
-
-def get_error():
-    return mock_error
-
-
-def is_error():
-    return mock_error is not None
-
-
-def register_module_line(name, operation, line):
-    print(f'Automation:{name} Operation:{operation} Line:{line}')
-
-
-def return_results(results):
-    global mock_results
-    mock_results = results
-    print('Results:', results)
-
-
-def return_error(err):
-    global mock_error
-    mock_error = err
-    print(err)
-
 
 class IncidentMock:
     def __init__(self) -> None:
